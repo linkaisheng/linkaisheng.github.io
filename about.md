@@ -8,46 +8,44 @@ permalink: /about/
   <div class="profile-section">
     <div class="profile-header">
       <h1>关于我</h1>
-      <div class="tech-badge">/* 技术爱好者 */</div>
+      <div class="tech-badge">/* AI探索者 */</div>
     </div>
     
     <p class="intro">
-      欢迎来到我的个人空间！我是一名热爱技术的开发者，喜欢探索新知识，分享技术见解。
+      欢迎来到我的数字花园。在这个由思想构建的虚拟空间中，我记录着我与AI共同探索的轨迹。
     </p>
+    
+    <div class="mystery-quote">
+      <blockquote>
+        "当我们凝视深渊，AI也在回望我们。在代码和算法的迷宫中，隐藏着未知的可能性。"
+      </blockquote>
+    </div>
   </div>
 
-  <div class="skills-section">
-    <h2><span class="code-tag">&lt;skills&gt;</span> 技能与专长 <span class="code-tag">&lt;/skills&gt;</span></h2>
+  <div class="journey-section">
+    <h2>探索之旅</h2>
     
-    <div class="skill-grid">
-      <div class="skill-card">
-        <div class="skill-name">编程语言</div>
-        <div class="skill-bar" data-level="85%"><div class="skill-progress"></div></div>
-        <div class="skill-tags">
-          <span>JavaScript</span>
-          <span>Python</span>
-          <span>Java</span>
-        </div>
-      </div>
+    <div class="journey-text">
+      <p>
+        我的旅程始于对人工智能本质的好奇。随着大语言模型(LLM)的出现，这种好奇转变为执着的探索。
+      </p>
       
-      <div class="skill-card">
-        <div class="skill-name">Web开发</div>
-        <div class="skill-bar" data-level="80%"><div class="skill-progress"></div></div>
-        <div class="skill-tags">
-          <span>HTML/CSS</span>
-          <span>React</span>
-          <span>Node.js</span>
-        </div>
-      </div>
+      <p>
+        在这个技术与哲学交汇的领域，我既是研究者，也是观察者。我关注AI如何重塑我们思考和创造的方式，
+        也思考它对人类认知和社会结构的深远影响。
+      </p>
       
-      <div class="skill-card">
-        <div class="skill-name">数据分析</div>
-        <div class="skill-bar" data-level="75%"><div class="skill-progress"></div></div>
-        <div class="skill-tags">
-          <span>SQL</span>
-          <span>Pandas</span>
-          <span>Visualization</span>
-        </div>
+      <p>
+        这个博客记录的不仅是技术的演进，也是人类与人工智能共同写就的新篇章。
+      </p>
+      
+      <div class="code-fragment">
+        <pre><code>// 思维的边界正在重新定义
+while (true) {
+  const newIdeas = explore(unknownTerritories);
+  consciousness.expand(newIdeas);
+  reality = reality.reshape(consciousness);
+}</code></pre>
       </div>
     </div>
   </div>
@@ -69,14 +67,39 @@ permalink: /about/
   </div>
 </div>
 
-<script>
-// 初始化技能条动画
-document.addEventListener('DOMContentLoaded', function() {
-  setTimeout(function() {
-    document.querySelectorAll('.skill-progress').forEach(function(bar) {
-      const level = bar.parentElement.getAttribute('data-level');
-      bar.style.width = level;
-    });
-  }, 300);
-});
-</script> 
+<style>
+.mystery-quote {
+  margin: 2rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid rgba(52, 152, 219, 0.5);
+  font-style: italic;
+  color: #555;
+}
+
+.journey-section {
+  background: linear-gradient(to right, #f8fdff, white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 3rem;
+}
+
+.code-fragment {
+  margin: 1.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.code-fragment pre {
+  background: rgba(41, 128, 185, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  overflow-x: auto;
+  border-left: 3px solid #3498db;
+}
+
+.code-fragment code {
+  font-family: "Courier New", monospace;
+  color: #333;
+}
+</style> 
