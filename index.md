@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: home-custom
 title: 首页
 ---
 
