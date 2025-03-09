@@ -1,4 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() {
+// 当页面加载完成时执行
+window.addEventListener('DOMContentLoaded', function() {
+  console.log('Tech Chaos JS loaded');
   // 创建科技混沌容器
   const container = document.createElement('div');
   container.className = 'tech-chaos-container';

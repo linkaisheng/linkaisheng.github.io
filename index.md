@@ -10,7 +10,7 @@ title: 首页
 
 ## 技术领域
 
-```
+```javascript
 function explore() {
   const knowledge = ['编程', '设计', '创新'];
   return knowledge.map(item => `探索${item}的奥秘`);
@@ -58,10 +58,11 @@ function explore() {
 .hero-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: #3498db;
   background: linear-gradient(90deg, #3498db, #2c3e50);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: inline-block;
 }
 
 .hero-subtitle {
@@ -97,7 +98,7 @@ function explore() {
   margin: 1rem 0;
 }
 
-code {
+pre, code.language-javascript {
   background: rgba(52, 152, 219, 0.1);
   border-radius: 4px;
   border-left: 3px solid #3498db;
@@ -105,5 +106,16 @@ code {
   margin: 1.5rem 0;
   font-family: "Courier New", monospace;
   display: block;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .post-grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
