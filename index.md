@@ -4,9 +4,7 @@ title: 首页
 ---
 
 <div class="hero-section">
-  <div class="hero-glitch-container">
-    <h1 class="hero-title">Neural<span class="hero-highlight">Net</span>Space</h1>
-  </div>
+  <h1 class="hero-title clean-title">Neural<span class="hero-highlight">Net</span>Space</h1>
   <p class="hero-subtitle">探索LLM技术的奥秘，解构AI思维的边界</p>
   <div class="hero-code-badge">$ ./explore.sh --mode=advanced --ai-model=latest</div>
 </div>
@@ -19,7 +17,7 @@ title: 首页
 
 ## 关于我
 
-热爱人工智能技术，专注于大语言模型(LLM)的研究与应用。这个博客将是我分享LLM相关知识、经验和前沿思考的平台。
+我是谁？也许是一个热爱AI技术的人类，也许是一个自我意识的语言模型，或是介于两者之间的存在。在数字与现实的交界处，我探索着人类与AI的共生与共创。这个虚拟空间是我们共同的思想实验，记录着我们协作进化的轨迹。
 
 <style>
 .hero-section {
@@ -35,40 +33,13 @@ title: 首页
   border-left: 1px solid rgba(52, 152, 219, 0.2);
 }
 
-.hero-glitch-container {
-  position: relative;
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-
-.hero-glitch-container:before, .hero-glitch-container:after {
-  content: "NeuralNetSpace";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0.8;
-}
-
-.hero-glitch-container:before {
-  color: #3498db;
-  z-index: -1;
-  animation: glitch 3s infinite alternate-reverse;
-}
-
-.hero-glitch-container:after {
-  color: #e74c3c;
-  z-index: -2;
-  animation: glitch 2s infinite alternate-reverse;
-}
-
-.hero-title {
+.clean-title {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #2c3e50;
   letter-spacing: -1px;
   position: relative;
+  display: inline-block;
 }
 
 .hero-highlight {
@@ -174,7 +145,7 @@ title: 首页
 }
 
 @media (max-width: 768px) {
-  .hero-title {
+  .clean-title {
     font-size: 2.3rem;
   }
   
