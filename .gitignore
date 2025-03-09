@@ -1,0 +1,11 @@
+# Jekyll生成的文件
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+# 本地环境文件
+.env
+.DS_Store
+# 其他
+*.swp
+*.log 
