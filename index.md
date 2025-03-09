@@ -8,15 +8,9 @@ title: 首页
   <p class="hero-subtitle">探索LLM技术的奥秘，分享AI前沿的魅力</p>
 </div>
 
-## 近期文章
+## 最新动态
 
-<div class="post-grid">
-  <div class="post-card">
-    <h3>暂无文章，敬请期待！</h3>
-    <p class="post-excerpt">第一篇关于LLM技术的文章即将发布，敬请关注...</p>
-    <div class="post-meta">预计发布时间: 即将到来</div>
-  </div>
-</div>
+这里是我对大语言模型(LLM)技术的思考与实践分享。通过这个博客，我希望能够记录我的学习历程，同时与对AI技术感兴趣的朋友们交流讨论。
 
 ## 关于我
 
