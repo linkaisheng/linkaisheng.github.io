@@ -10,6 +10,10 @@
   <!-- CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | relative_url }}">
+  
+  <!-- Mermaid.js for diagrams -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+  
   <style>
     /* 内联CSS避免加载问题 */
     :root {
@@ -182,6 +186,43 @@
     .post-content pre code {
       background: transparent;
       padding: 0;
+    }
+    
+    /* 表格样式 */
+    .post-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: white;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .post-content th {
+      background: var(--primary-color);
+      color: white;
+      padding: 12px 15px;
+      text-align: left;
+      font-weight: 600;
+    }
+    
+    .post-content td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .post-content tr:hover {
+      background-color: rgba(52, 152, 219, 0.05);
+    }
+    
+    /* Mermaid图表样式 */
+    .post-content .mermaid {
+      text-align: center;
+      margin: 2rem 0;
+      padding: 1rem;
+      background: rgba(52, 152, 219, 0.05);
+      border-radius: 5px;
     }
     
     /* 页脚 */
@@ -378,6 +419,16 @@
   </footer>
 
   <script>
+    // 初始化Mermaid图表
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default',
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true
+      }
+    });
+    
     // 科技混沌效果
     document.addEventListener('DOMContentLoaded', function() {
       console.log('开始创建科技混沌效果');
